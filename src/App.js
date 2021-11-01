@@ -5,6 +5,7 @@ import { GlobalStyles  } from './global';
 import { lightTheme, darkTheme } from './themes';
 import './App.css';
 
+
 const App = () => {
   const [theme, setTheme] = useState('light');
 
