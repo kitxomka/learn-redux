@@ -1,17 +1,10 @@
-// import React, {useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment } from '../counterSlice';
+import { decrement, increment } from '../counterReducer';
+import { counterSelector } from '../selectors';
 
 const Counter = () => {
-    // const [count, setCount] = useState(0);
-    // const increment = () => {
-    //     return setCount(count + 1);
-    // }
-    // const decrement = () => {
-    //     return setCount(count - 1);
-    // }
-
-    const count = useSelector((state) => state.counter.count);
+    
+    const count = useSelector(counterSelector);
     const dispatch = useDispatch();
 
     return (
